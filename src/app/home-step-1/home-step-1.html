@@ -1,0 +1,15 @@
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h3>CALORIE CONTROL, BALANCED NUTRITION</h3>
+            <h1>Start living your healthiest life</h1>
+            <button (click)="onBookAppointment(); $event.preventDefault();">Book An Appointment</button>
+        </div>
+    </div>
+    <app-booking-popup
+      [isOpen]="isBookingPopupOpen"
+      [preSelectedService]="selectedService"
+      (closePopup)="onCloseBookingPopup()">
+    </app-booking-popup>
+</body>

@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { ServiceCard } from '../service-card/service-card';
 import { BookingPopup } from '../booking-popup/booking-popup';
-import { CommonModule } from '@angular/common';
-import { SERVICES_DATA } from '../services-data';
 
 @Component({
-  selector: 'app-about-page',
-  imports: [  BookingPopup ],
-  templateUrl: './about-page.html',
-  styleUrl: './about-page.css'
+  selector: 'app-home-step-1',
+  imports: [BookingPopup],
+  templateUrl: './home-step-1.html',
+  styleUrl: './home-step-1.css'
 })
-export class AboutPage {
+export class HomeStep1 {
   isBookingPopupOpen = false;
   selectedService: any = null;
 
