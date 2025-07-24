@@ -7,7 +7,7 @@ import { SERVICES_DATA } from '../services-data';
 
 @Component({
   selector: 'app-service-page',
-  imports: [CommonModule, ServiceCard, BookingPopup],
+  imports: [CommonModule, ServiceCard, BookingPopup ],
   templateUrl: './service-page.html',
   styleUrl: './service-page.css'
 })

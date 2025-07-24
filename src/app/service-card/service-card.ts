@@ -1,7 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Service } from '../models/booking.interface'; // Assuming you have a Service model defined
-
+import { Service } from '../models/booking.interface'; 
 @Component({
   selector: 'app-service-card',
   imports: [CommonModule],
