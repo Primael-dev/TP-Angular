@@ -73,7 +73,7 @@
           <p class="pourquoi-text">
             En me choisissant comme coach santé, vous choisissez un partenaire dédié à votre réussite. Je me tiens au courant des dernières recherches et tendances en nutrition pour vous fournir des conseils fondés sur des données probantes. Mon approche est bienveillante, sans jugement et vise à vous aider à trouver la solution qui vous convient le mieux.
           </p>
-          <a href="#" class="pourquoi-btn" (click)="onBookAppointment()">Prendre rendez-vous</a>
+          <a href="#" class="pourquoi-btn" (click)="onBookAppointment(); $event.preventDefault()">Prendre rendez-vous</a>
         </div>
         <div class="pourquoi-image-container">
           <img src="https://websitedemos.net/wellness-coach-02/wp-content/uploads/sites/1514/2025/02/About-page-image2.jpg" alt="Coaching santé" class="pourquoi-image" />
