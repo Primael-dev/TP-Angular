@@ -12,7 +12,7 @@
             <div class="text">
             <h3>Expand your spiritual knowledge</h3>
             <p>Spiritual coaching will help you to walk confidently into your purpose and incorporate your spirituality into your day-to-day life. <strong>start from: $1,500</strong> </p>
-            <button>Book An Appointment</button>
+            <button (click)="onBookAppointment(); $event.preventDefault();">Book An Appointment</button>
             </div>
         </div>
         <div class="card">
@@ -22,7 +22,7 @@
             <div class="text">
             <h3>Expand your spiritual knowledge</h3>
             <p>Spiritual coaching will help you to walk confidently into your purpose and incorporate your spirituality into your day-to-day life. <strong>start from: $1,500</strong> </p>
-            <button>Book An Appointment</button>
+            <button (click)="onBookAppointment(); $event.preventDefault();">Book An Appointment</button>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
             <div class="text">
             <h3>Expand your spiritual knowledge</h3>
             <p>Spiritual coaching will help you to walk confidently into your purpose and incorporate your spirituality into your day-to-day life. <strong>start from: $1,500</strong> </p>
-            <button>Book An Appointment</button>
+            <button (click)="onBookAppointment(); $event.preventDefault();">Book An Appointment</button>
             </div>
         </div>
         <div class="card">
@@ -45,9 +45,15 @@
             <div class="text">
             <h3>Expand your spiritual knowledge</h3>
             <p>Spiritual coaching will help you to walk confidently into your purpose and incorporate your spirituality into your day-to-day life. <strong>start from: $1,500</strong> </p>
-            <button>Book An Appointment</button>
+            <button (click)="onBookAppointment(); $event.preventDefault();">Book An Appointment</button>
             </div>
         </div>
     </div>
 </div>
+<app-booking-popup
+      [isOpen]="isBookingPopupOpen"
+      [preSelectedService]="selectedService"
+      (closePopup)="onCloseBookingPopup()">
+    </app-booking-popup>
+
 </div>
