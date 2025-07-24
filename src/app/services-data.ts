@@ -1,5 +1,6 @@
 import { Service } from './models/booking.interface';
 
+
 export const SERVICES_DATA: Service[] = [
   {
     id: 'nutrition',
