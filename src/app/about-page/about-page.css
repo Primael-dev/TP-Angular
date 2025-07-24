@@ -1,0 +1,269 @@
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Hero */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url('https://websitedemos.net/wellness-coach-02/wp-content/uploads/sites/1514/2024/12/About-Hero-BG.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 64rem;
+  padding-left: 4rem;
+  margin-left: 4rem;
+}
+.hero-label {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+.hero-title {
+  color: #fff;
+  font-size: 4rem;
+  font-family: serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* Section Présentation */
+.presentation-section {
+  background: #f0fdf4;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+@media (min-width: 1024px) {
+  .presentation-section {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+.presentation-title {
+  flex: 1;
+  font-size: 2.5rem;
+  font-family: serif;
+  font-weight: 400;
+  color: #222;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}
+@media (min-width: 1024px) {
+  .presentation-title {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.presentation-content {
+  flex: 1;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.presentation-subtitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #14532d;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .presentation-subtitle {
+    text-align: left;
+  }
+}
+.presentation-text {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .presentation-text {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+}
+
+/* Section Accompagnement */
+.accompagnement-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: #f9fafb;
+}
+@media (min-width: 768px) {
+  .accompagnement-section {
+    flex-direction: row;
+  }
+}
+.accompagnement-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.accompagnement-image {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 24rem;
+}
+.accompagnement-content {
+  flex: 1;
+}
+.accompagnement-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.accompagnement-text {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Section Statistiques */
+.statistiques-section {
+  padding: 4rem 1rem;
+  background: #f0fdf4;
+}
+.statistiques-grid {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .statistiques-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.stat-block {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.stat-block:hover {
+  transform: scale(1.05);
+}
+.stat-value {
+  font-size: 3rem;
+  font-family: serif;
+  font-weight: 400;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+.stat-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.stat-text {
+  text-align: center;
+  color: #444;
+}
+
+/* Section Pourquoi travailler avec moi */
+.pourquoi-section {
+  background: #fef3c7;
+  padding: 5rem 1rem;
+}
+.pourquoi-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .pourquoi-container {
+    flex-direction: row;
+  }
+}
+.pourquoi-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pourquoi-title {
+  font-size: 3rem;
+  font-family: serif;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .pourquoi-title {
+    font-size: 3.5rem;
+  }
+}
+.pourquoi-text {
+  font-size: 1.125rem;
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}
+.pourquoi-btn {
+  padding: 0.75rem 2rem;
+  border: 2px solid #16a34a;
+  color: #166534;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.pourquoi-btn:hover {
+  background: #16a34a;
+  color: #fff;
+}
+.pourquoi-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.pourquoi-image {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 24rem;
+  object-fit: cover;
+}

@@ -1,1 +1,92 @@
-<p>about-page works!</p>
+
+<body>
+    <!-- Section Hero -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-label">SUR MOI</span>
+        <h1 class="hero-title">Votre santé est<br>ma passion</h1>
+      </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="presentation-section">
+      <h2 class="presentation-title">
+        Adopter une approche individualisée et axée<br>
+        sur les causes profondes de la santé.
+      </h2>
+      <div class="presentation-content">
+        <h6 class="presentation-subtitle">
+          J'aide mes clients à adopter des habitudes saines, à se sentir mieux et à trouver ce qui leur convient.
+        </h6>
+        <p class="presentation-text">
+          Je m'appelle Lumora, coach santé passionnée et spécialiste certifiée en nutrition. Fort de 8 ans d'expérience, j'accompagne les personnes dans leur transformation grâce à une meilleure alimentation et un meilleur mode de vie. Mon parcours dans le coaching santé a débuté par une quête personnelle de bien-être, qui a fait naître en moi un profond désir d'aider les autres à trouver leur chemin vers la santé.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Image + Accompagnement -->
+    <section class="accompagnement-section">
+        <div class="accompagnement-image-container">
+            <img src="https://websitedemos.net/wellness-coach-02/wp-content/uploads/sites/1514/2024/12/Supporting-you-in-achieving-sec-IMG-1.jpg" alt="" class="accompagnement-image" />
+        </div>
+        <div class="accompagnement-content">
+            <h2 class="accompagnement-title">Vous accompagner dans l’atteinte et le maintien d’une vie saine et équilibrée.</h2>
+            <p class="accompagnement-text">
+                Je crois qu'il n'existe pas de solution universelle. J'adopte une approche holistique de la nutrition, fondée sur des données probantes, en utilisant la médecine intégrative et fonctionnelle. Cela signifie que je vous aide à vous sentir au mieux de votre forme en ciblant la cause profonde de vos problèmes et en vous accompagnant dans l'adoption d'habitudes alimentaires et de mode de vie durables.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="statistiques-section">
+        <div class="statistiques-grid">
+            <div class="stat-block">
+                <h2 class="stat-value">92%</h2>
+                <h4 class="stat-title">Taux de bonheur</h4>
+                <p class="stat-text">
+                    Mes clients déclarent se sentir plus heureux et plus énergiques après avoir terminé leur programme de coaching santé et bien-être.
+                </p>
+            </div>
+            <div class="stat-block">
+                <h2 class="stat-value">88%</h2>
+                <h4 class="stat-title">Réussir dans la formation des habitudes</h4>
+                <p class="stat-text">
+                    Les clients adoptent et maintiennent avec succès des habitudes saines à long terme, grâce à des stratégies adaptées et à un soutien constant.
+                </p>
+            </div>
+            <div class="stat-block">
+                <h2 class="stat-value">82%</h2>
+                <h4 class="stat-title">Amélioration des connaissances en nutrition</h4>
+                <p class="stat-text">
+                    Les clients quittent le programme avec une meilleure compréhension de la nutrition et de la manière de faire de meilleurs choix alimentaires.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Pourquoi travailler avec moi -->
+    <section class="pourquoi-section">
+      <div class="pourquoi-container">
+        <div class="pourquoi-content">
+          <h2 class="pourquoi-title">Pourquoi travailler<br>avec moi</h2>
+          <p class="pourquoi-text">
+            En me choisissant comme coach santé, vous choisissez un partenaire dédié à votre réussite. Je me tiens au courant des dernières recherches et tendances en nutrition pour vous fournir des conseils fondés sur des données probantes. Mon approche est bienveillante, sans jugement et vise à vous aider à trouver la solution qui vous convient le mieux.
+          </p>
+          <a href="#" class="pourquoi-btn" (click)="onBookAppointment(); $event.preventDefault()">Prendre rendez-vous</a>
+        </div>
+        <div class="pourquoi-image-container">
+          <img src="https://websitedemos.net/wellness-coach-02/wp-content/uploads/sites/1514/2025/02/About-page-image2.jpg" alt="Coaching santé" class="pourquoi-image" />
+        </div>
+      </div>
+    </section>
+  
+    <app-booking-popup
+      [isOpen]="isBookingPopupOpen"
+      [preSelectedService]="selectedService"
+      (closePopup)="onCloseBookingPopup()">
+    </app-booking-popup>
+</body>
+
+
+
