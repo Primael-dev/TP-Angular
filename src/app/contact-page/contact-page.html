@@ -1,1 +1,94 @@
-<p>contact-page works!</p>
+<section class="contact-section">
+  <div class="contact-wrapper">
+    <!-- Partie gauche -->
+    <div class="contact-left">
+      <h3>CONTACT</h3>
+      <h1>
+        Boost health with functional nutrition.
+      </h1>
+      <p>Have questions or need more information? Contact me to start your path to a healthy, balanced life.</p>
+      <div class="inf"> <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/phone.png" alt="phone"/> 1-800-123-4567 </div>
+      <div style="cursor: pointer;" class="inf"> <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/new-post.png" alt="new-post"/> bankolewilli@gmail.com </div>
+      <div class="inf1"> <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/marker.png" alt="marker"/> 3517 W. Gray St. Utica, Pennsylvania </div>
+    </div>
+
+    <!-- Partie droite -->
+    <div class="contact-right">
+      <h2 >Drop us a line</h2>
+      <form
+        class="contact-form"
+        (ngSubmit)="onSubmit()"
+        #contactForm="ngForm"
+        novalidate
+      >
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            [(ngModel)]="form.name"
+            required
+          />
+          <small *ngIf="contactForm.submitted && !form.name" class="error">
+            Le nom est requis.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            [(ngModel)]="form.email"
+            required
+            email
+          />
+          <small
+            *ngIf="contactForm.submitted && !form.email"
+            class="error"
+          >
+            L’email est requis.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Your Phone</label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            [(ngModel)]="form.phone"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            name="message"
+            [(ngModel)]="form.message"
+            required
+          ></textarea>
+          <small
+            *ngIf="contactForm.submitted && !form.message"
+            class="error"
+          >
+            Le message est requis.
+          </small>
+        </div>
+
+        <button type="submit" [disabled]="!contactForm.form.valid">
+          BOOK AN APPOINTMENT
+        </button>
+
+        <!-- Message de succès -->
+        <p *ngIf="successMessage" class="success-message">
+          {{ successMessage }}
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
