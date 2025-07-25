@@ -6,10 +6,10 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-contact',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  template: './contact.html',
-  styles: './contact.css' ,
+  templateUrl: './contact-page.html',
+  styleUrls: ['./contact-page.css']
 })
-export class ContactComponent {
+export class ContactPage {
   form = {
     name: '',
     email: '',
@@ -21,9 +21,9 @@ export class ContactComponent {
 
   onSubmit() {
     console.log('Formulaire soumis', this.form);
-
+    
     this.successMessage = "✅ Votre message a été envoyé avec succès !";
-
+    
     // Réinitialiser le formulaire
     this.form = {
       name: '',

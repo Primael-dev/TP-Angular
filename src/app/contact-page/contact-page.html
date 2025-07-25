@@ -2,17 +2,19 @@
   <div class="contact-wrapper">
     <!-- Partie gauche -->
     <div class="contact-left">
-      <div class="contact-left-overlay">
-        <h1>Let’s Connect</h1>
-        <p>
-          I’m here to help you achieve your wellness goals.<br />
-          Reach out and let’s start the journey together.
-        </p>
-      </div>
+      <h3>CONTACT</h3>
+      <h1>
+        Boost health with functional nutrition.
+      </h1>
+      <p>Have questions or need more information? Contact me to start your path to a healthy, balanced life.</p>
+      <div class="inf"> <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/phone.png" alt="phone"/> 1-800-123-4567 </div>
+      <div style="cursor: pointer;" class="inf"> <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/new-post.png" alt="new-post"/> bankolewilli@gmail.com </div>
+      <div class="inf1"> <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/marker.png" alt="marker"/> 3517 W. Gray St. Utica, Pennsylvania </div>
     </div>
 
     <!-- Partie droite -->
     <div class="contact-right">
+      <h2 >Drop us a line</h2>
       <form
         class="contact-form"
         (ngSubmit)="onSubmit()"
@@ -79,7 +81,7 @@
         </div>
 
         <button type="submit" [disabled]="!contactForm.form.valid">
-          Send Message
+          BOOK AN APPOINTMENT
         </button>
 
         <!-- Message de succès -->

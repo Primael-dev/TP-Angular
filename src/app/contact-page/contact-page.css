@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marcellus&family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 .contact-section {
   width: 100%;
-  min-height: 100vh;
-  background-color: #faf4f0;
+  min-height: 120vh;
+  background-image: url('https://websitedemos.net/wellness-coach-02/wp-content/uploads/sites/1514/2024/12/Contact-Hero-BG-1.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
+  background-size: cover;
+  background-position: center;
+
 }
 
 .contact-wrapper {
@@ -13,17 +17,12 @@
   flex-wrap: wrap;
   max-width: 1100px;
   width: 100%;
-  background: #fff;
-  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  margin-top: 100px;
 }
 
 .contact-left {
   flex: 1 1 50%;
-  background-image: url('https://websitedemos.net/wellness-coach-02/wp-content/uploads/sites/118/2021/03/hero-contact.jpg');
-  background-size: cover;
-  background-position: center;
   position: relative;
   min-height: 400px;
 }
@@ -51,7 +50,8 @@
 .contact-right {
   flex: 1 1 50%;
   padding: 50px 40px;
-  background-color: #fefbf9;
+  background-color: rgb(248,240,229);
+  border-radius: 15px;
 }
 
 .contact-form {
@@ -86,19 +86,19 @@
 }
 
 button[type='submit'] {
-  background-color: #b58e7c;
+  background-color: #20912d;
   color: white;
   border: none;
-  padding: 14px;
+  padding: 10px;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button[type='submit']:hover {
-  background-color: #a47868;
+  background-color: #26b136;
 }
 .success-message {
   color: green;
@@ -111,4 +111,43 @@ button[type='submit']:hover {
   font-size: 0.85rem;
   margin-top: 4px;
   display: block;
+}
+
+h1{
+  font-size: 45px;
+  font-family: marcellus;
+  margin-top: 10px;
+}
+
+p{
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+h3{
+  font-size: 20px;
+  font-family: marcellus;
+}
+
+.inf{
+  display: flex;
+  width: 150px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.inf1{
+  display: flex;
+  width: 300px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+h2{
+  font-size: 28px;
+  font-family: marcellus;
+}
+
+.form-group{
+  margin-top: 20px;
 }
